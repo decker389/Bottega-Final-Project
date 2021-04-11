@@ -5,8 +5,9 @@ import PageTitle from '../../pageComponents/pageTitle'
 class CheckoutReview extends Component {
     render() {
         return (
-            <div className='checkout-wrapper'>
-                <PageTitle className='checkout__page-title' title='Checkout Review' /></div>
+            <div className='checkout-review-wrapper'>
+                <PageTitle className='checkout__page-title' title='Checkout Review' />
+            </div>
         )
     }
 }
