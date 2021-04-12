@@ -1,7 +1,8 @@
 import React from 'react';
 
-import PageTitle from '../pageComponents/pageTitle';
+import PageTitle from '../../pageComponents/pageTitle';
 
+// eslint-disable-next-line
 export default function () {
     return (
         <div className='shop-wrapper'>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PageTitle from "../pageComponents/pageTitle";
 
+// eslint-disable-next-line
 export default function () {
     return (
         <div className='no-match'>

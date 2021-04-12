@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import PageTitle from '../pageComponents/pageTitle';
 
+import PageTitle from '../../pageComponents/pageTitle';
+import HomeInfo from './homeInfo';
 
 class Home extends Component {
     render() {
@@ -8,6 +9,7 @@ class Home extends Component {
         return (
             <div className='home'>
                 <PageTitle className='home__page-title' title='Home Page' />
+                <HomeInfo />
             </div>
         )
     }

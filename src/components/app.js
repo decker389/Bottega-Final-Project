@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import axios from "axios";
 
-import Home from "./pages/home";
+import Home from "./pages/home/home";
 import NoMatch from "./pages/no-match";
-import Shop from './pages/shop';
+import Shop from './pages/shop/shop';
 import NavigationBar from "./navigationBar";
 import AccountSignIn from "./pages/Account/accountSignIn";
 import AccountCreation from "./pages/Account/accountCreation";
