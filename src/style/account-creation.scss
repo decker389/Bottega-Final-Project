@@ -1,0 +1,117 @@
+.account-creation-wrapper {
+    display: grid;
+
+    .account-creation__page-title {
+        justify-self: center;
+        margin-left: 0px;
+    }
+
+}
+.creation-form {
+    display: grid;
+    justify-content: center;
+    padding-top: 10px;
+    width: 80%;
+    justify-self: center;
+    box-shadow: 1px 1px 1px 2px grey;
+    grid-template-columns: [s] 1fr 1fr [e];
+    grid-template-rows: [s]1fr [m] 1fr [e];
+
+    label {
+        margin-right: 5px;
+    }
+
+    &__first-name, &__last-name, &__email, &__password {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: italic;
+        align-self: center;
+        align-items: center;
+        justify-content:center;
+        height: 50%;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        input {
+            height: 15px;
+            border: none;
+            box-shadow: 2px 2px 5px grey;
+
+        }
+
+    }
+
+
+}
+
+.creation-form-middle-border {
+    height: 50px;
+    border-top: 2px solid blue;
+    padding: 5px;
+    grid-row: e;
+    grid-column: s/e;
+    border-bottom: 2px solid blue;
+    display: grid;
+    justify-items: center;
+}
+
+.creation-form__bank-account-info {
+    grid-column: s/e;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-template-rows: [s] 1fr [m] 1fr [e] 1fr;
+    grid-template-columns:  [s] 1fr [e]1fr ;
+    padding-bottom: 5px;
+    border-bottom: 2px solid blue;
+
+
+    &__bank-account-name {
+        width: 100;
+        grid-column: s;
+        
+    }
+
+    &__bank-account-routing-number {
+        grid-column: s;
+        padding: 2px;
+    }
+
+    &__bank-account-number {
+        grid-column: s;
+        padding: 2px;
+    }
+
+    &__bank-account-type {
+        grid-column: e;
+        grid-row: s/e;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.submit-button {
+    display: grid;
+    padding: 6px;
+    grid-column: s/e;
+    justify-items: center;
+
+    input {
+        width: 50%;
+        height: 20px;
+        border: 1px solid grey;
+
+        &:hover {
+            transition: .5s;
+            height: 30px;
+            width: 35%;
+            border: 2px transparent;
+            background-color: black;
+            color: white;
+        }
+    }
+}
