@@ -35,7 +35,7 @@ export default function AccountCreationForm() {
             </div>
 
             <div className="creation-form-middle-border">
-                <p>First Name, Last Name, Email Address, and Password are required. You can add your bank account information latter.</p>
+                <p>First Name, Last Name, Email Address, and Password are required. You can add your bank account information later.</p>
             </div>
 
             <div className="creation-form__bank-account-info">
