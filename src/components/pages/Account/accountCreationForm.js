@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export default function AccountCreationForm() {
 
     const [firstName, setFirstName] = useState("");
@@ -11,9 +12,13 @@ export default function AccountCreationForm() {
     const [bankRoutingNumber, setBankRoutingNumber] = useState("");
     const [bankAccountNumber, setBankAccountNumber] = useState("");
 
-    return (
 
+
+    //const { handleSubmit } = this.props;
+
+    return (
         <form className="creation-form">
+
             <div className="creation-form__first-name">
                 <label>First Name:</label>
                 <input name="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
@@ -65,7 +70,7 @@ export default function AccountCreationForm() {
             </div>
 
             <div className='submit-button'>
-                <input type="submit" value="Create Account" />
+                <input type="submit" value="Create Account" onSubmit="" />
             </div>
 
         </form>

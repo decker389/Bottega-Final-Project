@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { firebase } from "./reducers/initFirebase";
 
 
 import Home from "./pages/home/home";
@@ -12,7 +11,6 @@ import AccountSignIn from "./pages/Account/accountLogin/accountSignIn";
 import AccountCreation from "./pages/Account/accountCreation";
 import CheckoutReview from "./pages/shop/checkoutReview";
 
-const db = firebase.database();
 
 export default class App extends Component {
 

@@ -2,11 +2,20 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 
+const NEXT_PUBLIC_FIREBASE_PROJECT_ID = "bottega-capstone-project-d6647";
+const NEXT_PUBLIC_FIREBASE_API_KEY = "AIzaSyDknSPFxHCV44fK1EyHT5PLzc_8vMDwoH4";
+
+
+
+
+
+
+
 const config = {
-    apikey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-    authDomain: `${process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID}.firebaseapp.com`,
-    databaseURL: `https://${process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID}-default-rtbd.firebaseio.com`,
-    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    apikey: NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: `${NEXT_PUBLIC_FIREBASE_PROJECT_ID}.firebaseapp.com`,
+    databaseURL: `https://${NEXT_PUBLIC_FIREBASE_PROJECT_ID}-default-rtbd.firebaseio.com`,
+    projectId: NEXT_PUBLIC_FIREBASE_PROJECT_ID,
 };
 
 function initFirebase() {
