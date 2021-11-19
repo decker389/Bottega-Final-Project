@@ -9,7 +9,8 @@ import AccountCreationForm from './accountCreationForm';
 class AccountCreation extends Component {
 
 
-    onsubmit = (fields) => {
+    onSubmit = (fields) => {
+        console.log(fields);
         const db = firebase.database();
         const account = db.ref("accounts");
         const newAccountRef = account.push(fields);
@@ -21,7 +22,7 @@ class AccountCreation extends Component {
         return (
             <div className='account-creation-wrapper'>
                 <PageTitle className='account-creation__page-title' title='Account Creation' style={{ justifyContent: "center" }} />
-                <AccountCreationForm />
+                <AccountCreationForm onSubmit={this.onSubmit} className='sign-up__form' />
             </div>
         )
     }
