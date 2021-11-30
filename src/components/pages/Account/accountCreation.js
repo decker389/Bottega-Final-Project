@@ -10,13 +10,17 @@ class AccountCreation extends Component {
 
 
     onSubmit = (fields) => {
-        console.log(fields);
-        const db = firebase.database();
-        const account = db.ref("accounts");
-        const newAccountRef = account.push(fields);
-        newAccountRef.set({
-            fields
-        });
+        try {
+            const db = firebase.database();
+            const account = db.ref("accounts");
+            const newAccountRef = account.push(fields);
+            newAccountRef.set({
+                fields
+            });
+        }
+        catch (e) {
+            console.log("Creation Error", e);
+        }
     }
     render() {
         return (

@@ -11,22 +11,13 @@ class AccountCreationForm extends Component {
         return (
             <form className="creation-form" onSubmit={handleSubmit}>
 
-                <Field className="creation-form__first-name" type="name" title="First Name:" placeholder="First Name" name="firstName" component={FormInput} required />
+                <Field className="creation-form__first-name" type="firstname" title="First Name:" placeholder="First Name" name="firstName" component={FormInput} required={true} />
 
-                {/* <Field className="creation-form__last-name">
-                    <label>Last Name:</label>
-                    <input name="lastName" required />
-                </Field>
+                <Field className="creation-form__last-name" type="lastname" title="Last Name:" placeholder="Last Name" name="lastName" component={FormInput} required />
 
-                <div className="creation-form__email">
-                    <label>Email Address:</label>
-                    <input name="emailAddress" required />
-                </div>
+                <Field className="creation-form__email" type="email" title="Email Address:" placeholder="Email Address" name="emailAddress" component={FormInput} required />
 
-                <div className="creation-form__password">
-                    <label>Password:</label>
-                    <input type="password" name="password" required />
-                </div>
+                <Field className="creation-form__password" type="password" title="Password:" placeholder="" name="password" component={FormInput} required />
 
                 <div className="creation-form-middle-border">
                     <p>First Name, Last Name, Email Address, and Password are required. You can add your bank account information later.</p>
@@ -56,10 +47,10 @@ class AccountCreationForm extends Component {
                         <input name="bankAccountNumber" />
                     </div>
 
-                </div> */}
+                </div>
 
                 <div className='submit-button'>
-                    <input type="submit" value="Create Account" onSubmit="" />
+                    <input type="submit" value="Create Account" />
                 </div>
 
             </form>
