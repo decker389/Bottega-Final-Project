@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
-import { FormInput } from '../../../formFields';
+import { FormInput, FormButton } from '../../pageComponents/formFields';
+import history from 'history';
 
 class AccountCreationForm extends Component {
     render() {
 
         const { handleSubmit } = this.props;
+        const { className } = this.props;
+        //const required = value => (value || typeof value === 'number' ? undefined : 'Required')
 
         return (
-            <form className="creation-form" onSubmit={handleSubmit}>
+            <form className={` ${className} creation-form`} onSubmit={handleSubmit}>
 
-                <Field className="creation-form__first-name" type="firstname" title="First Name:" placeholder="First Name" name="firstName" component={FormInput} required={true} />
+                <Field className="creation-form__first-name" type="firstname" title="First Name:" placeholder="First Name" name="firstName" component={FormInput} />
 
                 <Field className="creation-form__last-name" type="lastname" title="Last Name:" placeholder="Last Name" name="lastName" component={FormInput} required />
 
@@ -48,11 +51,7 @@ class AccountCreationForm extends Component {
                     </div>
 
                 </div>
-
-                <div className='submit-button'>
-                    <input type="submit" value="Create Account" />
-                </div>
-
+                <Field className='submit-button' type="submit" title="Create Account" name='Create Account' component={FormButton} />
             </form>
         )
     }
