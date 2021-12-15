@@ -1,21 +1,28 @@
-import { useState } from 'react';
+import React, { Component } from 'react';
+import { reduxForm, Field } from 'redux-form';
 
-export default function LoginForm() {
-    const [usernameEmail, setUsernameEmail] = useState("");
-    const [password, setPassword] = useState("");
+import { FormInput, FormButton } from '../../../pageComponents/formFields';
+import history from '../../../history';
 
-    return (
-        <form className='Login-form'>
-            <div className="login-form__username-email">
-                <label>Email:</label>
-                <input name="username-email" value={usernameEmail} onChange={(e) => setUsernameEmail(e.target.value)} required />
+class AccountLoginForm extends Component {
+    render() {
+        return (
+            <div className='login-form-wrapper'>
+                <form className='login-form'>
+                    <Field className="login-form__email" type="email" title="Email" placeholder="" name="email" component={FormInput} />
+                    <Field className="login-form__password" type="password" title="Password" placeholder="123" name="password" component={FormInput} />
+                    <Field onClick={() => console.log('That submited')} className='login-button' type="login" title="Login" name='Login' component={FormButton} />
+                </form>
+                <div>
+                    <p>account recover stuff</p>
+                </div>
             </div>
-
-            <div className="login-form__password">
-                <label>Password:</label>
-                <input name="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-            </div>
-        </form>
-    )
-
+        )
+    }
 }
+
+AccountLoginForm = reduxForm({
+    form: 'AccountLoginForm'
+})(AccountLoginForm);
+
+export default AccountLoginForm

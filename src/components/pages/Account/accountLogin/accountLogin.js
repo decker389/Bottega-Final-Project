@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 import PageTitle from '../../../pageComponents/pageTitle';
 import LoginForm from './accountLoginForm';
 
-class AccountSignIn extends Component {
+class Accountlogin extends Component {
     render() {
         return (
-            <div className='account-signin-wrapper'>
-                <PageTitle className='account-signin__page-title' title='Account SignIn' />
+            <div className='account-login-wrapper'>
+                <PageTitle className='account-login__page-title' title='Account login' />
                 <LoginForm />
             </div>
         )
     }
 }
 
-export default AccountSignIn;
+export default Accountlogin;

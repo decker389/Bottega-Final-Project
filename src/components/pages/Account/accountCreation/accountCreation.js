@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { firebase } from "../../reducers/initFirebase";
+import { firebase } from "../../../reducers/initFirebase";
 
-import * as actions from '../../reducers';
-import PageTitle from '../../pageComponents/pageTitle';
+import * as actions from '../../../reducers';
+import PageTitle from '../../../pageComponents/pageTitle';
 import AccountCreationForm from './accountCreationForm';
 
 class AccountCreation extends Component {

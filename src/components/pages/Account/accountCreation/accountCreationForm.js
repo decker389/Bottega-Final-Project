@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
-import { FormInput, FormButton } from '../../pageComponents/formFields';
-import history from 'history';
+import { FormInput, FormButton } from '../../../pageComponents/formFields';
+import history from '../../../history';
 
 class AccountCreationForm extends Component {
     render() {
@@ -12,7 +12,7 @@ class AccountCreationForm extends Component {
         //const required = value => (value || typeof value === 'number' ? undefined : 'Required')
 
         return (
-            <form className={` ${className} creation-form`} onSubmit={handleSubmit}>
+            <form className={` ${className} creation-form`} onSubmit={handleSubmit} onClick={() => history.push('/shop')}>
 
                 <Field className="creation-form__first-name" type="firstname" title="First Name:" placeholder="First Name" name="firstName" component={FormInput} />
 
@@ -27,10 +27,7 @@ class AccountCreationForm extends Component {
                 </div>
 
                 <div className="creation-form__bank-account-info">
-                    <div className="creation-form__bank-account-info__bank-account-name">
-                        <label>Bank Account Name:</label>
-                        <input name="bankAccountName" />
-                    </div>
+                    <Field className="creation-form__bank-account-name" type="bankAccountName" title="Bank Account Name:" placeholder="" name="bankAccountName" component={FormInput} />
 
                     <div className="creation-form__bank-account-info__bank-account-type">
                         <label>Bank Account Type:</label>
@@ -39,19 +36,11 @@ class AccountCreationForm extends Component {
                             <option value="Savings">Savings</option>
                         </select>
                     </div>
-
-                    <div className="creation-form__bank-account-info__bank-account-routing-number">
-                        <label>Bank Routing Number:</label>
-                        <input name="bankRoutingNumber" />
-                    </div>
-
-                    <div className="creation-form__bank-account-info__bank-account-number">
-                        <label>Bank Account Number:</label>
-                        <input name="bankAccountNumber" />
-                    </div>
+                    <Field className="creation-form__bank-account-routing-number" type="bankAccountRoutingNumber" title="Bank Account Routing Number:" placeholder="" name="bankRoutingNumber" component={FormInput} />
+                    <Field className="creation-form__bank-account-number" type="bankAccountNumber" title="Bank Account Number:" placeholder="" name="bankAccountNumber" component={FormInput} />
 
                 </div>
-                <Field className='submit-button' type="submit" title="Create Account" name='Create Account' component={FormButton} />
+                <Field onClick={() => console.log('That submited')} className='submit-button' type="submit" title="Create Account" name='Create Account' component={FormButton} />
             </form>
         )
     }

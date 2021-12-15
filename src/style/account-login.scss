@@ -1,0 +1,14 @@
+.account-login-wrapper {
+    display: grid;
+
+    .account-login__page-title{
+        justify-self: center;
+        margin-left: 0px;
+    }
+}
+
+
+.login-form-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -13,9 +13,9 @@ const NavigationBar = (props) => {
             <div className='navigation-bar-left'>
                 {props.loggedInStatus === "LOGGED_IN" ? <a onClick={handleSignOut} href='https://google.com'>
                     Log out
-                    </a> :
-                    <NavLink exact to='/account' activeClassName='nav-link-active'>Sign In</NavLink>}
-                <NavLink to='/account/creation' activeClassName='nav-link-active'>Create Account</NavLink>
+                </a> :
+                    <NavLink exact to='/accountlogin' activeClassName='nav-link-active'>Sign In</NavLink>}
+                <NavLink to='/accountcreation' activeClassName='nav-link-active'>Create Account</NavLink>
             </div>
 
             <div className='navigation-bar-center'>
