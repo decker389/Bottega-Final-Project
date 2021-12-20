@@ -5,12 +5,14 @@ import { firebase } from "../../../reducers/initFirebase";
 import * as actions from '../../../reducers';
 import PageTitle from '../../../pageComponents/pageTitle';
 import AccountCreationForm from './accountCreationForm';
+import history from '../../../history';
 
 class AccountCreation extends Component {
 
 
     onSubmit = (fields) => {
         try {
+            history.push('/shop')
             const db = firebase.database();
             const account = db.ref("accounts");
             const newAccountRef = account.push(fields);
