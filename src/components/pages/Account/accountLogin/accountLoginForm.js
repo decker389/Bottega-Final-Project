@@ -10,7 +10,7 @@ class AccountLoginForm extends Component {
             <div className='login-form-wrapper'>
                 <form className='login-form'>
                     <Field className="login-form__email" type="email" title="Email" placeholder="" name="email" component={FormInput} />
-                    <Field className="login-form__password" type="password" title="Password" placeholder="123" name="password" component={FormInput} />
+                    <Field className="login-form__password" type="password" title="Password" placeholder="" name="password" component={FormInput} />
                     <Field onClick={() => console.log('That submited')} className='login-button' type="login" title="Login" name='Login' component={FormButton} />
                 </form>
                 <div>

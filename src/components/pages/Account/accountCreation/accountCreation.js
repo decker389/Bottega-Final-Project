@@ -12,7 +12,7 @@ class AccountCreation extends Component {
 
     onSubmit = (fields) => {
         try {
-            history.push('/shop')
+            history.push('/accountDetails')
             const db = firebase.database();
             const account = db.ref("accounts");
             const newAccountRef = account.push(fields);
