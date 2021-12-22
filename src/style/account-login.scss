@@ -11,4 +11,12 @@
 .login-form-wrapper {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+
+    .login-form {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 40%;
+    }
 }

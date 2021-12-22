@@ -7,7 +7,7 @@ class Accountlogin extends Component {
     render() {
         return (
             <div className='account-login-wrapper'>
-                <PageTitle className='account-login__page-title' title='Account login' />
+                <PageTitle className='account-login__page-title' title='Account Login' />
                 <LoginForm />
             </div>
         )

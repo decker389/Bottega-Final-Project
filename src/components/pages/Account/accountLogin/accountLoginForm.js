@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
 import { FormInput, FormButton } from '../../../pageComponents/formFields';
-import history from '../../../history';
 
 class AccountLoginForm extends Component {
     render() {
@@ -14,7 +13,8 @@ class AccountLoginForm extends Component {
                     <Field onClick={() => console.log('That submited')} className='login-button' type="login" title="Login" name='Login' component={FormButton} />
                 </form>
                 <div>
-                    <p>account recover stuff</p>
+                    <h2>account recovery</h2>
+                    <p>Forgot Password?</p>
                 </div>
             </div>
         )
