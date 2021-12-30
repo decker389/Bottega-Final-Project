@@ -22,7 +22,7 @@
         margin-right: 5px;
     }
 
-    &__first-name, &__last-name, &__email, &__password {
+    &__first-name, &__last-name, &__email, &__password, &__bank-account-name, &__bank-account-type, &__bank-account-routing-number, &__bank-account-number {
         display: flex;
         font-size: 1rem;
         font-weight: 500;
@@ -49,6 +49,7 @@
 
 .creation-form-middle-border {
     height: 75%;
+    font-style: italic;
     border-top: 2px solid blue;
     padding: 5px;
     grid-row: e;

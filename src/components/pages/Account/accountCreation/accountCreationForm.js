@@ -27,7 +27,7 @@ class AccountCreationForm extends Component {
                 <div className="creation-form__bank-account-info">
                     <Field className="creation-form__bank-account-name" type="bankAccountName" title="Bank Account Name:" placeholder="" name="bankAccountName" component={FormInput} />
 
-                    <div className="creation-form__bank-account-info__bank-account-type">
+                    <div className="creation-form__bank-account-type">
                         <label>Bank Account Type:</label>
                         <select >
                             <option value="Checking">Checking</option>
