@@ -26,7 +26,7 @@ class AccountCreation extends Component {
     }
     render() {
         return (
-            <div className='account-creation-wrapper'>
+            <div className='page-container'>
                 <PageTitle className='account-creation__page-title' title='Account Creation' />
                 <AccountCreationForm onSubmit={this.onSubmit} className='sign-up__form' />
             </div>

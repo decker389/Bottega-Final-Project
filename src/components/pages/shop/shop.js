@@ -6,7 +6,7 @@ import ShopContent from './shopContent';
 // eslint-disable-next-line
 export default function () {
     return (
-        <div className='shop-wrapper'>
+        <div className='page-container'>
             <PageTitle className='shop__page-title' title='The Shop' />
             <ShopContent />
         </div>

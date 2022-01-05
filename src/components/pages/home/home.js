@@ -7,7 +7,7 @@ class Home extends Component {
     render() {
 
         return (
-            <div className='home'>
+            <div className='page-container'>
                 <PageTitle className='home__page-title' title='Home Page' />
                 <HomeInfo />
             </div>

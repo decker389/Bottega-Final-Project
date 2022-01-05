@@ -1,0 +1,107 @@
+[33mcommit 57f8c085f63e11339101f95d0d9a850df08da7df[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: christopher decker <decker389@aol.com>
+Date:   Wed Dec 29 22:59:58 2021 -0700
+
+    updated loginform fields titles
+
+[33mcommit 425c04fa97ddffa8d74190c085af807cf8539093[m
+Author: christopher decker <decker389@aol.com>
+Date:   Wed Dec 29 22:57:48 2021 -0700
+
+    updated account creation form css to add all stylings to the fields inside the form
+
+[33mcommit 681be7e6b81d7d72430e6f718cd6ff24fa13466f[m
+Author: christopher decker <decker389@aol.com>
+Date:   Wed Dec 29 22:30:07 2021 -0700
+
+    added image to account Login page and added link to account recovery page. Finished styles for page.
+
+[33mcommit 1ff4b75e02aa8b9e1c3b1c0a30064bf9bb2eece9[m
+Author: christopher decker <decker389@aol.com>
+Date:   Wed Dec 22 08:02:54 2021 -0700
+
+    changed account recovery title to a h2 tag, started on the link for password recover, and began styles for page.
+
+[33mcommit 9941132a646b52bdf04de486ad820b5911d89ca3[m
+Author: christopher decker <decker389@aol.com>
+Date:   Wed Dec 22 00:57:53 2021 -0700
+
+    removed placeholder from password in login form, also edited styles for not found page; made the link text larger and added hover effect. moved history push to the try catch block instead of before it.
+
+[33mcommit f00eebaf5f1738f7007d15921e8bd5d82cd2dc81[m
+Author: christopher decker <decker389@aol.com>
+Date:   Mon Dec 20 13:41:25 2021 -0700
+
+    fixed FormFields component to include isRequired parameter so that we can make some fields required to submit the form and some that are not required.
+
+[33mcommit 731e49686e1dbea773e3fb8d958cf751ce6fb36d[m
+Author: christopher decker <decker389@aol.com>
+Date:   Tue Dec 14 23:15:02 2021 -0700
+
+    finished moving account creation form divs into fields, started account Login form and scss for it. Also changed files so that they all said accountlogin instead of some saying signin and some saying login.
+
+[33mcommit a363ad122be2499d06913a3aaad2412559e3e134[m
+Author: christopher decker <decker389@aol.com>
+Date:   Sat Dec 11 08:02:53 2021 -0700
+
+    worked with CSS to make all page-title components center without inline styles, moved formFields.js file and reviewed redux-form for account creation.
+
+[33mcommit 387dd3800e0a44f9823586714c9d103bf3edf1e4[m
+Author: christopher decker <decker389@aol.com>
+Date:   Tue Nov 30 08:06:42 2021 -0700
+
+    edited redux form fields more, added try catch block for submittion of form to database. Next step is adding the required field logic to the form for the fields of first name, last name, email, and password
+
+[33mcommit 5f267bca5137cdf445dc868debdc5f9af6568b0c[m
+Author: christopher decker <decker389@aol.com>
+Date:   Fri Nov 19 00:07:16 2021 -0700
+
+    added formFields.js file and changed form in accountCreationForm to use formFields component. Also updated Firebase configuration file and fixed history in router.
+
+[33mcommit 0952225881519756890a85e36d317dcf09d7d1f8[m
+Author: christopher decker <decker389@aol.com>
+Date:   Sun Nov 14 20:00:54 2021 -0700
+
+    edited Account creation page for review of work
+
+[33mcommit 33d71a2f468c394a7db7001795366c59a7b6253d[m
+Author: christopher decker <decker389@aol.com>
+Date:   Wed Sep 15 12:29:14 2021 -0600
+
+    modified Account Creation Form and fixed spelling error on same form
+
+[33mcommit f75066e6fa1a68763451d319b080492b2d9bdd76[m
+Author: christopher decker <decker389@aol.com>
+Date:   Wed Sep 15 12:20:39 2021 -0600
+
+    added login form to login page
+
+[33mcommit fec70efbfd1942c57f97f4ee0b5aae676f89ea92[m
+Author: christopher decker <decker389@aol.com>
+Date:   Fri Sep 10 03:39:01 2021 -0600
+
+    added in account creation form and styles for form, functionality for form not yet implemented. Also added in the code to connect to the firebase database
+
+[33mcommit c14451e5ae277b5d199e02e5bb6a321eb371297b[m
+Author: christopher decker <decker389@aol.com>
+Date:   Sun Apr 11 21:42:44 2021 -0600
+
+    added comments that stops anomous function warnings and moved around components for organization
+
+[33mcommit f460db1751c1880b6195e8c7de566540543dfe83[m
+Author: christopher decker <decker389@aol.com>
+Date:   Sun Apr 11 10:36:51 2021 -0600
+
+    added onto existing pages the PageTitle component
+
+[33mcommit d36054f91ba4a76a3388213138481e718d7a0124[m
+Author: christopher decker <decker389@aol.com>
+Date:   Sun Apr 11 10:28:34 2021 -0600
+
+    first commit
+
+[33mcommit e028be03ac75723b60c9c0a1db7a388f1a417fb9[m
+Author: christopher decker <decker389@aol.com>
+Date:   Thu Apr 8 12:41:31 2021 -0600
+
+    Initialize project using Create React App

@@ -6,7 +6,7 @@ import LoginForm from './accountLoginForm';
 class Accountlogin extends Component {
     render() {
         return (
-            <div className='account-login-wrapper'>
+            <div className='page-container'>
                 <PageTitle className='account-login__page-title' title='Account Login' />
                 <LoginForm />
             </div>

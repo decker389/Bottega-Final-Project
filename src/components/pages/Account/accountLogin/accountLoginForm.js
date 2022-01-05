@@ -16,7 +16,7 @@ class AccountLoginForm extends Component {
                 </form>
                 <div className='login-page-help-link-wrapper'>
                     <h2>account recovery</h2>
-                    <NavLink exact to='/AccountDashboard' className='help-link'>Forgot Password?</NavLink>
+                    <NavLink exact to='/recoverpassword' className='help-link'>Forgot Password?</NavLink>
                     <div className='login-image'
                         style={{
                             height: '100%',

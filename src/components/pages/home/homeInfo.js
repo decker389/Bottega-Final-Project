@@ -4,7 +4,7 @@ class HomeInfo extends Component {
     render() {
         return (
             <div>
-                Welcome to the Home page. If you Log In or Create an account, the account information will appear here!
+                This is the home page; extra information will go here once I've figured out what.
             </div>
         )
     }

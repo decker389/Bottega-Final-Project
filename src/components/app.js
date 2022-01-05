@@ -10,6 +10,7 @@ import NavigationBar from "./navigationBar";
 import AccountLogin from "./pages/Account/accountLogin/accountLogin";
 import AccountCreation from "./pages/Account/accountCreation/accountCreation";
 import CheckoutReview from "./pages/shop/checkoutReview";
+import AccountDashboard from "./pages/Account/accountDashboard/accountDashboard";
 
 
 export default class App extends Component {
@@ -26,6 +27,7 @@ export default class App extends Component {
                             <Route exact path='/accountlogin' component={AccountLogin} />
                             <Route exact path='/accountcreation' component={AccountCreation} />
                             <Route exact path='/checkout/review' component={CheckoutReview} />
+                            <Route exact path='/accountDashboard' component={AccountDashboard} />
 
 
                             <Route component={NoMatch} />
