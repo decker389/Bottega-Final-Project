@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { firebase } from "../../../reducers/initFirebase";
+import { db } from "../../../reducers/initFirebase";
 
 import * as actions from '../../../reducers';
 import PageTitle from '../../../pageComponents/pageTitle';
@@ -13,12 +13,10 @@ class AccountCreation extends Component {
     onSubmit = (fields) => {
         try {
             history.push('/accountDetails')
-            const db = firebase.database();
-            const account = db.ref("accounts");
-            const newAccountRef = account.push(fields);
-            newAccountRef.set({
+            db.collection('users').doc(fields.emailAddress).set({
                 fields
-            });
+            })
+            console.log('created account', fields.emailAddress)
         }
         catch (e) {
             console.log("Creation Error", e);

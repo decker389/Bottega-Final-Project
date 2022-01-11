@@ -11,6 +11,7 @@ import AccountLogin from "./pages/Account/accountLogin/accountLogin";
 import AccountCreation from "./pages/Account/accountCreation/accountCreation";
 import CheckoutReview from "./pages/shop/checkoutReview";
 import AccountDashboard from "./pages/Account/accountDashboard/accountDashboard";
+import TestPage from "./pages/TestPage/testpage";
 
 
 export default class App extends Component {
@@ -28,6 +29,7 @@ export default class App extends Component {
                             <Route exact path='/accountcreation' component={AccountCreation} />
                             <Route exact path='/checkout/review' component={CheckoutReview} />
                             <Route exact path='/accountDashboard' component={AccountDashboard} />
+                            <Route exact path='/testpage' component={TestPage} />
 
 
                             <Route component={NoMatch} />
