@@ -38,7 +38,7 @@ class AccountCreationForm extends Component {
                     <Field className="creation-form__bank-account-number" type="bankAccountNumber" title="Bank Account Number:" placeholder="" name="bankAccountNumber" component={FormInput} />
 
                 </div>
-                <Field onClick={() => console.log('That submited')} className='submit-button' type="submit" title="Create Account" name='Create Account' component={FormButton} />
+                <Field className='submit-button' type="submit" title="Create Account" name='Create Account' component={FormButton} />
             </form >
         )
     }

@@ -16,7 +16,6 @@ class AccountCreation extends Component {
             db.collection('users').doc(fields.emailAddress).set({
                 fields
             })
-            console.log('created account', fields.emailAddress)
         }
         catch (e) {
             console.log("Creation Error", e);
