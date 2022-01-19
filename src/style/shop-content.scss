@@ -1,0 +1,147 @@
+.product-sort-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    height: 45px;
+
+    .category-button {
+        border: 0;
+        background: #333333;
+        color: white;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+            color: darkred;
+        }
+    }
+}
+
+.shop-content-wrapper {
+  
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-column-gap: 25px;
+  grid-row-gap: 40px;
+}
+
+.product-card {
+    display: grid;
+    grid-template-rows: 1/-1;
+    grid-template-columns: 1/-1;
+  
+    & > * {
+      grid-row: 1/-1;
+      grid-column: 1/-1;
+    }
+}
+    .product-card {
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+
+        &__front,
+        &__back {
+            backface-visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        &__back {
+            transform: rotateY(-180deg);
+          }
+        
+          &:hover &__front {
+            transform: rotateY(180deg);
+          }
+        
+          &:hover &__back {
+            transform: rotateY(0deg);
+          }        
+}
+.product-card__front {
+    height: 314px;
+    width: 240px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  
+    &__title, &__instock-quanity {
+      color: #333333;
+      font-size: 22px;
+      font-family: "Titillium Web";
+    }
+}
+.product-card__back {
+    height: 314px;
+    width: 240px;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  
+    display: grid;
+    grid-template-rows: 15px [title-s] 30px [title-e description-s] 1fr [description-e price-s] 25px [price-e footer-s] 65px [footer-e] 10px;
+    grid-template-columns: 15px [s] 1fr [e] 20px;
+    justify-items: start;
+    grid-row-gap: 7px;
+  
+    & > * {
+      grid-column: s/e;
+    }
+  
+    &__title {
+      color: #00cb79;
+      font-family: "Encode Sans Condensed";
+      font-size: 16px;
+      font-weight: 500;
+      grid-row: title-s/title-e;
+    }
+  
+    &__description {
+      font-size: 18px;
+      color: #333333;
+      align-self: center;
+      grid-row: description-s/description-e;
+    }
+  
+    &__price {
+      font-size: 18px;
+      grid-row: price-s/price-e;
+    }
+  
+    &__out-of-stock, &__buttons {
+      grid-row: footer-s/footer-e;
+      grid-template-rows: 1fr 1fr;
+
+    }
+  
+  //   &__add-to-cart {
+  //     justify-self: end;
+  //     grid-row: footer-s/footer-e;
+  //     height: 40px;
+  //     width: 97px;
+  //     border-radius: 20px;
+  //     color: white;
+  //     background-color: #00cb79;
+  //     font-weight: 600;
+  //     font-size: 12px;
+  
+  //     display: grid;
+  //     justify-items: center;
+  //     align-items: center;
+  
+  //     transition: all 0.3 ease;
+  
+  //     &:hover {
+  //       transform: scale(0.97);
+  //     }
+  
+  //     &:active {
+  //       transform: scale(0.95);
+  //     }
+  //   }
+  }
+
+  .shop-title-container {
+    background-color: darkgreen;
+    display: inherit;
+  }
