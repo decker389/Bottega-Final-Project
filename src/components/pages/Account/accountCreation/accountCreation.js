@@ -12,7 +12,7 @@ class AccountCreation extends Component {
 
     onSubmit = (fields) => {
         try {
-            history.push('/accountDetails')
+            history.push('/')
             db.collection('users').doc(fields.emailAddress).set({
                 fields
             })
