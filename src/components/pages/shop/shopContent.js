@@ -111,7 +111,7 @@ class ShopContent extends Component {
                     <button className="category-button" onClick={() => this.handleFilter("CLEAR_FILTER")}>All</button>
 
                 </div >
-                <div>
+                <div className="shop-content-container">
                     {this.products()}
                 </div>
             </div >

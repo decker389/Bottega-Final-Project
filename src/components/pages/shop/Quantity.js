@@ -53,7 +53,7 @@ class Quantity extends Component {
                     </button>
                 </div>
                 <div className="product-card__back__cart-count">
-                    {item.ProductInCartCount}
+                    Number of {item.Title} in the shopping cart {item.ProductInCartCount}
                 </div>
             </form>
         )
