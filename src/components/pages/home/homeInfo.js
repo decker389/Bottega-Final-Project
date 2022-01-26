@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import GeneralLoggedIn from './LoggedIn/home';
 import GeneralNotLoggedIn from './NotLoggedIn/Home';
 
-class HomeInfo extends Component {
 
-    render() {
-        const { loggedIn } = this.props
-        return (
-            <div>
-                {loggedIn === true ? <GeneralLoggedIn /> : <GeneralNotLoggedIn />}
-            </div>
-        )
-    }
+
+
+
+const HomeInfo = (props) => {
+    return (
+        <div>
+            {props.loggedIn === true ? <GeneralLoggedIn /> : <GeneralNotLoggedIn />}
+            {console.log(this.loggedIn)}
+        </div>
+    )
 }
-
 
 export default HomeInfo;

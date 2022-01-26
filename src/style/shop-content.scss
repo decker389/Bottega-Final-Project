@@ -31,8 +31,6 @@
 
 .product-card {
     display: grid;
-    // grid-template-rows: 1/-1;
-    // grid-template-columns: 1/-1;
   
     & > * {
       grid-row: 1/-1;
@@ -105,8 +103,11 @@
   
     &__out-of-stock, &__buttons {
       grid-row: footer-s/footer-e;
-      grid-template-rows: 1fr 1fr;
-
+      display: flex;
+    }
+    
+    &__plus-button, &__minus-button {
+      margin: 5px;
     }
   
   //   &__add-to-cart {
