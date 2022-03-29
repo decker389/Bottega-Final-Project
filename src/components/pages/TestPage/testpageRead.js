@@ -1,4 +1,4 @@
-import react, { Component } from 'react';
+import { Component } from 'react';
 
 import { db } from '../../reducers/initFirebase';
 class TestpageRead extends Component {
