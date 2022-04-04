@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 
 class GeneralLoggedIn extends Component {
+
+
     render() {
         return (
             <div>
@@ -10,7 +12,6 @@ class GeneralLoggedIn extends Component {
         )
     }
 }
-
 
 
 export default GeneralLoggedIn;

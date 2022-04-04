@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import * as actions from '../../../reducers';
 import PageTitle from '../../../pageComponents/pageTitle';
-import history from '../../../history';
+//import history from '../../../history';
 
 
 
