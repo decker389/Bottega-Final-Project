@@ -81,6 +81,9 @@ class ShopContent extends Component {
                         </div>
                     </div>
                     <div className="product-card__back">
+                        <div className="product-card__back__title">
+                            {item.Title}
+                        </div>
                         <div className="product-card__back__price">
                             Price: ${item.Price}
                         </div>
