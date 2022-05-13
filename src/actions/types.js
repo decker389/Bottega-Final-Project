@@ -1,0 +1,2 @@
+//User
+export const FETCH_USER_PURCHASES = 'FETCH_USER_PURCHASES';
