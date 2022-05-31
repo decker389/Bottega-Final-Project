@@ -1,2 +1,3 @@
 //User
 export const FETCH_USER_PURCHASES = 'FETCH_USER_PURCHASES';
+export const LOG_USER_IN = 'LOG_USER_IN';

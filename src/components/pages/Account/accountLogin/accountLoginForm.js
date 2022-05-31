@@ -6,29 +6,16 @@ import { FormInput, FormButton } from '../../../pageComponents/formFields';
 import shelfImg from '../../../../Static/Images/GamingShelf.jpg';
 
 class AccountLoginForm extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            loggedIn: false
-        };
-        this.handleLogIn = this.handleLogIn.bind(this)
-    }
-
-    handleLogIn(e) {
-        e.preventDefault()
-        this.setState({
-            loggedIn: true
-        })
-    }
 
     render() {
+        const { handleSubmit } = this.props;
 
         return (
             <div className='login-form-wrapper'>
-                <form className='login-form'>
+                <form className='login-form' onSubmit={handleSubmit}>
                     <Field className="login-form__email" type="email" title="Email:" placeholder="" name="email" component={FormInput} />
                     <Field className="login-form__password" type="password" title="Password:" placeholder="" name="password" component={FormInput} />
-                    <Field onClick={e => this.handleLogIn(e)} className='login-button' type="login" title="Login" name='Login' component={FormButton} />
+                    <Field className='login-button' type="login" title="Login" name='Login' component={FormButton} />
                 </form>
                 <div className='login-page-help-link-wrapper'>
                     <h2>account recovery</h2>

@@ -1,6 +1,7 @@
-import { fetchPreviousPerchases } from "./user";
+import { fetchPreviousPerchases, logUserIn } from "./user";
 
 
 export {
-    fetchPreviousPerchases
+    fetchPreviousPerchases,
+    logUserIn
 }
